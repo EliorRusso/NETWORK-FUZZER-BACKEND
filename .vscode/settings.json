@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "stdlib.h": "c",
+        "json-glib.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Enabled"
+}
