@@ -1,0 +1,1 @@
+gnome-terminal -e "/home/elior/Fuzzer/Mutate/stringfuzz" 

@@ -91,7 +91,7 @@ int main(int argc, char** argv)
         char* file_contents;
         json_char* json;
         json_value* value;
-        filename = "protocol.json";
+        filename = "packetdata.json";
 
         if ( stat(filename, &filestatus) != 0) {
                 fprintf(stderr, "File %s not found\n", filename);
@@ -128,25 +128,19 @@ int main(int argc, char** argv)
                 exit(1);
         }
         process_value(value, 0);
-        FILE *fptr, *fptr2;
-        fptr = fopen("/home/elior/Fuzzer/Mutate/WebInfo/webinfo.h","w");
-        fptr2 = fopen("/home/elior/Fuzzer/Mutate/WebInfo/InfoForProtocol.txt", "w");
+        FILE *fptr;
+        fptr = fopen("/home/elior/Fuzzer/Mutate/WebInfo/ipinfo.h","w");
         //fptr = fopen("t.h", "w");
         if(fptr == NULL)
         {
             printf("Error!");   
             exit(1);             
         }
-        fprintf(fptr, "int datafromuser[100] = {");
-        fprintf(fptr, "%s\n", arr[2]);
-        int c = atoi(arr[2]);
+        fprintf(fptr, "int datafromuserip[100] = {");
+        fprintf(fptr, "%s\n", arr[1]);
         int counter = 0;
-        for(int j = 0; j < 50; j+=1){
-                fprintf(fptr2, "%s\n", arr[j]);
-        };
-        for(int i = 5; i < c*4 + 4; i+=4){
+        for(int i = 2; i < 21; i+=1){
                 fprintf(fptr, ", %s", arr[i]);
-                fprintf(fptr, ", %s", arr[i+1]);
         }       
         // for(int i = 4; i < 1+c*3 + 7; i+=1){
         //     counter++;

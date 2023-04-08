@@ -1,1 +1,1 @@
-{"protocolname":"Nissim","numoffield":"2","field1":"src","size1":"2","value1":"3","valueto1":"5","field2":"dst","size2":"3","value2":"2","valueto2":"4"}
+{"protocolname":"Nissim","numoffield":"5","field1":"SRC","size1":"3","value1":"3","valueto1":"3","field2":"DST","size2":"3","value2":"3","valueto2":"3","field3":"LEN","size3":"3","value3":"3","valueto3":"3","field4":"CHECK","size4":"3","value4":"3","valueto4":"3","field5":"FLAG","size5":"3","value5":"3","valueto5":"3"}
